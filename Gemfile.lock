@@ -245,8 +245,8 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-feed
+  jekyll-theme-slate
   minima
-  tzinfo-data
 
 BUNDLED WITH
    2.0.1
