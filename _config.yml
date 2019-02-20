@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
 
 permalink:   /:categories/:title/
+repository: vibinvismi/vibinvismi.github.io
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
