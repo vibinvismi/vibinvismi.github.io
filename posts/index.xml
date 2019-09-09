@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tectalks</title>
+    <link>https://tectalks.com/posts/</link>
+    <description>Recent content in Posts on Tectalks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Sep 2019 16:41:04 +0200</lastBuildDate>
+    
+	<atom:link href="https://tectalks.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging With Hugo</title>
+      <link>https://tectalks.com/posts/blogging-with-hugo/</link>
+      <pubDate>Mon, 09 Sep 2019 16:41:04 +0200</pubDate>
+      
+      <guid>https://tectalks.com/posts/blogging-with-hugo/</guid>
+      <description>It&amp;rsquo;s been a while since updated this blog. Today I&amp;rsquo;ve decided to bring a new life to my blog with a new backend and new theme. I had been using Wordpress for blogging for a while and felt it was an overkill for a simple blog. Tried out Jekyll, however the experience was not ideal for me. In comparison, setting up Hugo was a breeze. I was able to install Hugo, set it up and deploy all under 30 minutes!</description>
+    </item>
+    
+  </channel>
+</rss>
