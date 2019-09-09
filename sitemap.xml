@@ -3,22 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tectalks.com/about/</loc>
-    <lastmod>2019-09-09T20:27:01+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tectalks.com/</loc>
-    <lastmod>2019-09-09T20:27:01+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tectalks.com/posts/blogging-with-hugo/</loc>
     <lastmod>2019-09-09T16:41:04+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://tectalks.com/posts/</loc>
+    <lastmod>2019-09-09T16:41:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tectalks.com/</loc>
     <lastmod>2019-09-09T16:41:04+02:00</lastmod>
   </url>
   
