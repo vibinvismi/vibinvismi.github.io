@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>493s on Tectalks</title>
+    <link>https://tectalks.com/493/</link>
+    <description>Recent content in 493s on Tectalks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Oct 2019 08:51:53 +0100</lastBuildDate>
+    
+	<atom:link href="https://tectalks.com/493/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Temporary Table Could Not Be Re Created</title>
+      <link>https://tectalks.com/493/temporary-table-could-not-be-re-created/</link>
+      <pubDate>Tue, 29 Oct 2019 08:51:53 +0100</pubDate>
+      
+      <guid>https://tectalks.com/493/temporary-table-could-not-be-re-created/</guid>
+      <description>Temporary tables with the same name could not be (re) created in a procedure – a case study A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.
+No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:</description>
+    </item>
+    
+  </channel>
+</rss>

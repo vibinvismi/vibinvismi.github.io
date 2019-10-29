@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="https://tectalks.com/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://tectalks.com/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://tectalks.com/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Temporary Table Could Not Be Re Created 
+      
+    </title>
+    <link rel="canonical" href="https://tectalks.com/493/temporary-table-could-not-be-re-created/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+</style>
+
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://tectalks.com/">Techtalks</a></h1>
+      <ul>
+        
+          <li><a href="https://tectalks.com/about">About</a></li>
+        
+          <li><a href="https://instagram.com/vibinvismi">Instagram</a></li>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Temporary Table Could Not Be Re Created </h1>
+
+  
+    <div id=sub-header>
+      October 2019 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    
+
+<h2 id="temporary-tables-with-the-same-name-could-not-be-re-created-in-a-procedure-a-case-study">Temporary tables with the same name could not be (re)  created in a procedure – a case study</h2>
+
+<p>A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.</p>
+
+<p>No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:</p>
+
+<p>Some Code:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+<span style="font-weight:bold">begin</span>
+<span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> temptab;
+<span style="font-weight:bold">end</span>
+<span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  temptab( n1 int, n2 int)</code></pre></div>
+<p>Do the processing.</p>
+
+<p>A Proof of concept is presented. Perfect on demo!</p>
+
+<p>Now a similar logic is to be applied for six different sets of data within the same procedure,code snippet for each set of data would be developed by a separate developer.  The team decided to do a copy and paste of the code that is already in place.</p>
+
+<p>Hmm !!! Copy and Paste !!  Anyway the table temptab is dropped and re-created each time, should not be a problem. The modified code looks like the following:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="font-style:italic">/* For first data set */</span>
+<span style="">–</span> <span style="font-weight:bold">some</span> code
+<span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+<span style="font-weight:bold">begin</span>
+<span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> temptab;
+<span style="font-weight:bold">end</span>
+<span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  temptab( n1 int, n2 int);</code></pre></div>
+<p>some code in between&hellip;</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="font-style:italic">/* For second data set */</span>
+<span style="font-weight:bold">if</span> object_id (<span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+<span style="font-weight:bold">begin</span>
+<span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span>   temptab;
+<span style="font-weight:bold">end</span>
+<span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span> temptab( n1 int, n2 int) ;</code></pre></div>
+<p>So far so good..</p>
+
+<p>Now the Villain ( none other than the DBA ) comes into scene, he does not like the idea of dropping and recreating a permanent table from within a procedure. He preaches of N number of reasons against the practice.</p>
+
+<p>What to do now ? Obvious choice – use a temporary table instead. It should be simple – code is modified as follows:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="font-style:italic">/* For first data set */</span>
+<span style="">–</span> <span style="font-weight:bold">some</span> code
+<span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>tempdb..#temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+<span style="font-weight:bold">begin</span>
+<span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> #temptab;
+<span style="font-weight:bold">end</span>
+<span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  #temptab( n1 int, n2 int);</code></pre></div>
+<p>some code in between&hellip;</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="font-style:italic">/* For second data set */</span>
+<span style="font-weight:bold">if</span> object_id (<span style="">‘</span>tempdb..#temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+<span style="font-weight:bold">begin</span>
+<span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> #temptab;
+<span style="font-weight:bold">end</span>
+<span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span> #temptab( n1 int, n2 int) ;</code></pre></div>
+<p>Oh No! The procedure is not getting created, It is failing with an error message</p>
+
+<p>Msg 2714, Level 16, State 1, Line 10
+There is already an object named ‘#temptab’ in the database.</p>
+
+<p>You read it correctly, the message is -</p>
+
+<p><strong>There is already an object named ‘#temptab’ in the database.</strong></p>
+
+<p>Code is re-examined n number of times, not any issues were found. Logically it should drop the temporary table and re-create it, Right ? But reality is far from that ! Perplexed ?? But it was working perfectly with permanent table ! What is the problem with temporary tables?</p>
+
+<p>Let us see what <a href="https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms174979(v=sql.100)?redirectedfrom=MSDN">Microsoft</a> states about it:</p>
+
+<p>“If more than one temporary table is created inside a single stored procedure or batch, they must have different names.”</p>
+
+<p>Does it mean that we cannot re-create a temporary table from within a procedure with the same name ?  Let us check one more link –</p>
+
+<p><a href="https://blogs.msdn.microsoft.com/sqlserverfaq/2012/03/15/an-interesting-find-about-temp-tables-in-sql-server/">SQL Server Tips &amp; Tricks</a></p>
+
+<p>Crystal clear – This is a ‘feature’ by design.</p>
+
+<p>If you come across a similar issue don’t waste your valuable time to resolve. Instead look for workarounds.</p>
+
+<p>Thank you for visiting this post. Highly appreciate your feedback and comments.
+Happy reading.</p>
+
+<hr />
+
+<p>About the Author</p>
+
+<p><strong>Anoo S Pillai</strong></p>
+
+<p>Senior SQL Server DBA</p>
+
+<p>Specializing in high availibility, disaster recovery and performance tuning</p>
+
+  </div>
+
+  <div id=links>
+    
+    
+  </div>
+</section>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-147956139-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
+
+
+

@@ -6,18 +6,19 @@
     <description>Recent content on Tectalks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Sep 2019 14:10:56 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2019 08:51:53 +0100</lastBuildDate>
     
 	<atom:link href="https://tectalks.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to Secure SSH With AWS Systems Manager</title>
-      <link>https://tectalks.com/posts/posts/how-to-secure-ssh-with-aws-systems-manager/</link>
-      <pubDate>Wed, 18 Sep 2019 14:10:56 +0200</pubDate>
+      <title>Temporary Table Could Not Be Re Created</title>
+      <link>https://tectalks.com/493/temporary-table-could-not-be-re-created/</link>
+      <pubDate>Tue, 29 Oct 2019 08:51:53 +0100</pubDate>
       
-      <guid>https://tectalks.com/posts/posts/how-to-secure-ssh-with-aws-systems-manager/</guid>
-      <description>AWS Systems Manager is a powerful service</description>
+      <guid>https://tectalks.com/493/temporary-table-could-not-be-re-created/</guid>
+      <description>Temporary tables with the same name could not be (re) created in a procedure – a case study A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.
+No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:</description>
     </item>
     
     <item>
