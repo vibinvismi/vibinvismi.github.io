@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tectalks.com/493/</loc>
-    <lastmod>2019-10-29T08:51:53+01:00</lastmod>
+    <loc>https://tectalks.com/posts/embarking-on-a-journey-with-go/</loc>
+    <lastmod>2019-11-14T13:48:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tectalks.com/posts/</loc>
+    <lastmod>2019-11-14T13:48:20+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://tectalks.com/</loc>
+    <lastmod>2019-11-14T13:48:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tectalks.com/493/</loc>
     <lastmod>2019-10-29T08:51:53+01:00</lastmod>
   </url>
   
@@ -24,11 +34,6 @@
   
   <url>
     <loc>https://tectalks.com/posts/blogging-with-hugo/</loc>
-    <lastmod>2019-09-09T16:41:04+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tectalks.com/posts/</loc>
     <lastmod>2019-09-09T16:41:04+02:00</lastmod>
   </url>
   
