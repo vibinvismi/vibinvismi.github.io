@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tectalks</title>
@@ -6,10 +6,20 @@
     <description>Recent content on Tectalks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Nov 2019 13:48:20 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 15:52:45 +0100</lastBuildDate>
     
 	<atom:link href="https://tectalks.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Is Indeed The New Oil</title>
+      <link>https://tectalks.com/posts/data-is-indeed-new-oil/</link>
+      <pubDate>Tue, 19 Nov 2019 15:52:45 +0100</pubDate>
+      
+      <guid>https://tectalks.com/posts/data-is-indeed-new-oil/</guid>
+      <description>Data is just like crude. It’s valuable, but if unrefined it cannot really be used. It has to be changed into gas, plastic, chemicals, etc to create a valuable entity that drives profitable activity; so must data be broken down, analyzed for it to have value. - Clive Humby
+ It has been more than a decade since Clive Humby coined the term &amp;ldquo;Data is the new oil&amp;rdquo;. We now have all the evidence to believe that this is so true.</description>
+    </item>
     
     <item>
       <title>Embarking on a Journey With Go</title>
