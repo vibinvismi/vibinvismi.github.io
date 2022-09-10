@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="nojs" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Temporary Table Could Not Be Re Created – </title>
+<meta name="description" content="Temporary tables with the same name could not be (re) created in a procedure – a case study A complex SQL server procedure is under development. The Developer wants to …">
+<meta name="created" content="2019-10-29T08:51:53+0100">
+<meta name="modified" content="2019-10-29T08:51:53+0100">
+
+
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Temporary Table Could Not Be Re Created">
+<meta property="og:url" content="https://tectalks.com/493/temporary-table-could-not-be-re-created/">
+<meta property="og:type" content="article">
+
+<meta name="generator" content="Hugo 0.102.3" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="https://tectalks.com/493/temporary-table-could-not-be-re-created/">
+<link rel="apple-touch-icon" href="https://tectalks.com/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://tectalks.com/css/styles.653cf5c7bbdab4ef702592e75dbaac4eddcf76180f4f2621e465c0f1e004fd7e.css">
+<link rel="stylesheet" href="https://tectalks.com/css/print.c44e36c38770a06d7a3e314d59b503dd8fadcd356b709f8673f131c88b4e684e.css" media="print">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "Temporary Table Could Not Be Re Created",
+    "datePublished": "2019-10-29T08:51:53+01:00",
+    "dateModified": "2019-10-29T08:51:53+01:00",
+    "url" : "https://tectalks.com/493/temporary-table-could-not-be-re-created/",
+    "description": "Temporary tables with the same name could not be (re) created in a procedure – a case study A complex SQL server procedure is under development. The Developer wants to …",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://tectalks.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "url": "https://tectalks.com/"
+    }
+  }
+</script>
+
+<script src="https://tectalks.com/js/script-early.min.21220209af63c496c7531316922ef9a4548661be9388bbcd1f9899bb0b842b21.js"></script>
+<script defer src="https://tectalks.com/js/lib/umbrella.min.f441cd0957482aa1fca749d678691f7e9bc427613bd52d0c4ee746ba8f7ea500.js"></script>
+<script defer src="https://tectalks.com/js/cookieconsent.min.33a85fac1dc7091341b20090721e8b602fbb67cd18a08755c7b8b005da150ede.js"></script>
+<script defer src="https://tectalks.com/js/script.min.f8f04035e9a9424ebc267c1a5fdb513d79b611a04b85cab2ac414d091ac9e94c.js"></script>
+
+<script src="https://tectalks.com/js/tracking.78dc6e220dd0b66ef5830b607267dc4ad224c4123a3371ede3be38040c5d6a9e.js"></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-147956139-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page">
+<header class="header layout__header">
+<a href="https://tectalks.com/" title="Home" rel="home" class="header__logo"><img src="https://tectalks.com/images/logo.png" alt="Home" class="header__logo-image"></a>
+<h1 class="header__site-name">
+<a href="https://tectalks.com/" title="Home" class="header__site-link" rel="home"><span></span></a>
+</h1>
+<div class="region header__region">
+</div>
+</header>
+
+<nav class="main-menu layout__navigation">
+<h2 class="visually-hidden">Main menu</h2>
+<ul class="navbar">
+<li><a href="https://tectalks.com/about">About</a></li>
+<li><a href="https://instagram.com/vibinvismi">Instagram</a></li>
+</ul>
+</nav>
+
+
+<main class="main layout__main">
+<article class="single-view single-view--493">
+<header>
+<h1 class="title title-submitted">Temporary Table Could Not Be Re Created</h1>
+<div class="submitted">
+<time class="created-date" datetime="2019-10-29T08:51:53&#43;01:00">29 October, 2019</time>
+</div>
+</header>
+<div class="content">
+<h2 id="temporary-tables-with-the-same-name-could-not-be-re--created-in-a-procedure--a-case-study">Temporary tables with the same name could not be (re)  created in a procedure – a case study</h2>
+<p>A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.</p>
+<p>No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:</p>
+<p>Some Code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">begin</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> temptab;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  temptab( n1 int, n2 int)
+</span></span></code></pre></div><p>Do the processing.</p>
+<p>A Proof of concept is presented. Perfect on demo!</p>
+<p>Now a similar logic is to be applied for six different sets of data within the same procedure,code snippet for each set of data would be developed by a separate developer.  The team decided to do a copy and paste of the code that is already in place.</p>
+<p>Hmm !!! Copy and Paste !!  Anyway the table temptab is dropped and re-created each time, should not be a problem. The modified code looks like the following:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-style:italic">/* For first data set */</span>
+</span></span><span style="display:flex;"><span><span style="">–</span> <span style="font-weight:bold">some</span> code
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">begin</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> temptab;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  temptab( n1 int, n2 int);
+</span></span></code></pre></div><p>some code in between&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-style:italic">/* For second data set */</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> object_id (<span style="">‘</span>temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">begin</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span>   temptab;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span> temptab( n1 int, n2 int) ;
+</span></span></code></pre></div><p>So far so good..</p>
+<p>Now the Villain ( none other than the DBA ) comes into scene, he does not like the idea of dropping and recreating a permanent table from within a procedure. He preaches of N number of reasons against the practice.</p>
+<p>What to do now ? Obvious choice – use a temporary table instead. It should be simple – code is modified as follows:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-style:italic">/* For first data set */</span>
+</span></span><span style="display:flex;"><span><span style="">–</span> <span style="font-weight:bold">some</span> code
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> object_id  ( <span style="">‘</span>tempdb..#temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">begin</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> #temptab;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span>  #temptab( n1 int, n2 int);
+</span></span></code></pre></div><p>some code in between&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-style:italic">/* For second data set */</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> object_id (<span style="">‘</span>tempdb..#temptab<span style="">’</span>) <span style="font-weight:bold">is</span> <span style="font-weight:bold">not</span> <span style="font-weight:bold">null</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">begin</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">drop</span> <span style="font-weight:bold">table</span> #temptab;
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">create</span> <span style="font-weight:bold">table</span> #temptab( n1 int, n2 int) ;
+</span></span></code></pre></div><p>Oh No! The procedure is not getting created, It is failing with an error message</p>
+<p>Msg 2714, Level 16, State 1, Line 10
+There is already an object named ‘#temptab’ in the database.</p>
+<p>You read it correctly, the message is -</p>
+<p><strong>There is already an object named ‘#temptab’ in the database.</strong></p>
+<p>Code is re-examined n number of times, not any issues were found. Logically it should drop the temporary table and re-create it, Right ? But reality is far from that ! Perplexed ?? But it was working perfectly with permanent table ! What is the problem with temporary tables?</p>
+<p>Let us see what <a href="https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms174979(v=sql.100)?redirectedfrom=MSDN">Microsoft</a> states about it:</p>
+<p>“If more than one temporary table is created inside a single stored procedure or batch, they must have different names.”</p>
+<p>Does it mean that we cannot re-create a temporary table from within a procedure with the same name ?  Let us check one more link –</p>
+<p><a href="https://blogs.msdn.microsoft.com/sqlserverfaq/2012/03/15/an-interesting-find-about-temp-tables-in-sql-server/">SQL Server Tips &amp; Tricks</a></p>
+<p>Crystal clear – This is a ‘feature’ by design.</p>
+<p>If you come across a similar issue don’t waste your valuable time to resolve. Instead look for workarounds.</p>
+<p>Thank you for visiting this post. Highly appreciate your feedback and comments.
+Happy reading.</p>
+<hr>
+<p>About the Author</p>
+<p><strong>Anoo S Pillai</strong></p>
+<p>Senior SQL Server DBA</p>
+<p>Specializing in high availibility, disaster recovery and performance tuning</p>
+
+</div>
+
+<div class="content content--bottom">
+</div>
+</article>
+</main>
+
+
+<footer class="footer layout__footer">
+<p>© 2022 Tectalks</p>
+
+<p>Powered by <a href="https://gohugo.io/">Hugo</a> and the <a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>.</p>
+</footer>
+<div class="cookieconsent layout__cookieconsent hidden">
+  <div class="cookieconsent__message">
+    This website uses cookies. Some are necessary for the website to function. Tracking and analytics cookies are optional.
+    
+  </div>
+  <div class="cookieconsent__actions">
+    <button class="button button--small button--cookieconsent button--decline" type="button" data-consent="false">Only necessary</button>
+    <button class="button button--small button--cookieconsent button--accept" type="button" data-consent="true">Accept all</button>
+  </div>
+</div>
+</div>
+</body>
+</html>

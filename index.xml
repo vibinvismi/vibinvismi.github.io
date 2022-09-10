@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://tectalks.com/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Dec 2019 16:31:17 +0100</lastBuildDate>
+    <atom:link href="https://tectalks.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reflecting on 10 Years of DevOps</title>
+      <link>https://tectalks.com/posts/reflecting-on-10-years-of-devops/</link>
+      <pubDate>Tue, 03 Dec 2019 16:31:17 +0100</pubDate>
+      <guid>https://tectalks.com/posts/reflecting-on-10-years-of-devops/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;It’s not my machines, it’s your code!&amp;rdquo; vs. &amp;ldquo;It’s not my code, it’s your machines!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It has been 10 years since &lt;a href=&#34;https://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr&#34;&gt;John Allspaw&lt;/a&gt; and Paul Hammond proposed Dev and Ops co-operation during their talk at the &lt;a href=&#34;https://conferences.oreilly.com/velocity/velocity2009/public/schedule/speaker/24342&#34;&gt;2009 Velocity Conference&lt;/a&gt;. DevOps practise has progressed a long way since then. However, DevOps is just entering mainstream slowly now a days. DevOps practise came into existence as a way to solve never ending fights between Development team and Operations team to enable faster deployments to production. At this point, it might be a good idea to understand what exactly is DevOps? Is it a job role? Is it just about tools? Is it about some way of working or culture?&lt;/p&gt;
+&lt;h2 id=&#34;what-is-devops&#34;&gt;What is DevOps&lt;/h2&gt;
+&lt;p&gt;Definition of DevOps means a lot of different things to different people because it covers a lot of ground. In a nutshell, it is co-operation between developers and operations team. One popular definition of DevOps is as below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DevOps is the practice of operations and development engineers participating together in the entire service lifecycle, from design through the development process to production support.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;People define DevOps such as &amp;ldquo;Developer - Operations collaboration&amp;rdquo; or &amp;ldquo;treating your Infrastructure as Code&amp;rdquo; or &amp;ldquo;using automation&amp;rdquo; or using a &amp;ldquo;Kanban approach&amp;rdquo; or using some &amp;ldquo;tool chains&amp;rdquo;  or even &amp;ldquo;culture&amp;rdquo;. The best way to define DevOps is to consider it as an extension of Agile Development. It distills down to better collaboration of customers, product management, developers, and QA to fill in the gaps and rapidly iterate towards a better product. There are Three primary practise areas in the context of DevOps:&lt;/p&gt;
+&lt;h3 id=&#34;infrastructure-automation&#34;&gt;Infrastructure Automation&lt;/h3&gt;
+&lt;p&gt;Create your servers, OS, Configurations and Application Deployments as code.&lt;/p&gt;
+&lt;h3 id=&#34;continuous-delivery&#34;&gt;Continuous Delivery&lt;/h3&gt;
+&lt;p&gt;Build, Test and Deploy your applications in a fast and automated way.&lt;/p&gt;
+&lt;h3 id=&#34;site-reliability-engineering-sre&#34;&gt;Site Reliability Engineering (SRE)&lt;/h3&gt;
+&lt;p&gt;Responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of services.&lt;/p&gt;
+&lt;h2 id=&#34;stop-hiring-devops-engineers&#34;&gt;Stop Hiring DevOps Engineers&lt;/h2&gt;
+&lt;p&gt;One of the interesting talks in DevOpsDays Berlin by Stevan Cvetković was titled &lt;strong&gt;&amp;ldquo;Stop Hiring DevOps Engineers&amp;rdquo;&lt;/strong&gt;. DevOps is not a role, automation or a tool. It is a way of working. This is exactly why it is so hard to implement it right. It is a set of principles that define how entire organization should be operating.&lt;/p&gt;
+&lt;p&gt;The author of this talk recommends to imbibe DevOps culture in the entire organization. Start from the top to bottom. Ensure 100% buy-in from the top management for DevOps transformation. Identify leaders to spearhead this transformation.&lt;/p&gt;
+&lt;p&gt;Ensure Agile is working perfectly. Agile is the strong foundation absolutely necessary for the successful implementation of DevOps transformation. Embrace experimentation and convert each failures into a learning opportunity. Make development teams care about builds and deployments. Dev and Ops teams working together can efficiently optimize delivery pipelines.&lt;/p&gt;
+&lt;p&gt;Build shared responsibilities: ensure development team understand the impact of code changes to the customers as well as the underlying infrastructure. Invest in automation tools for Continuous Delivery and Infrastructure as Code.&lt;/p&gt;
+&lt;p&gt;Make work visible and embrace transparency. Ensure Ops teams are aware of Product roadmap and major changes.&lt;/p&gt;
+&lt;p&gt;Measure everything: monitor all stages of build and deployment pipeline and create visible dashboards shared with all stakeholders. &lt;/p&gt;
+&lt;p&gt;Roll up your sleeves and encourage every engineers of development and operations teams to be DevOps Engineers.&lt;/p&gt;
+&lt;h2 id=&#34;devops-vs-sre&#34;&gt;DevOps vs SRE&lt;/h2&gt;
+&lt;p&gt;SRE is the specific implementation of DevOps at Google, while Google likes to define DevOps as a &amp;ldquo;generalization of several core SRE principles to a wider range of organizations, management structures, and personnel&amp;rdquo;. SRE is a more formal implementation of DevOps practises with stringent controls. Google have lots of experience running several customer facing systems at a very large scale. Google have shared lots of details about &lt;a href=&#34;https://landing.google.com/sre/&#34;&gt;SRE&lt;/a&gt; and how their SRE teams works to automate, run and maintain their web-scale systems. &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Is Indeed The New Oil</title>
+      <link>https://tectalks.com/posts/data-is-indeed-new-oil/</link>
+      <pubDate>Tue, 19 Nov 2019 15:52:45 +0100</pubDate>
+      <guid>https://tectalks.com/posts/data-is-indeed-new-oil/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tectalks.com/data-visualisation.png&#34; alt=&#34;Data&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data is just like crude. It’s valuable, but if unrefined it cannot really be used. It has to be changed into gas, plastic, chemicals, etc to create a valuable entity that drives profitable activity; so must data be broken down, analyzed for it to have value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clive Humby&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It has been more than a decade since &lt;a href=&#34;https://en.wikipedia.org/wiki/Clive_Humby&#34;&gt;Clive Humby&lt;/a&gt; coined the term &amp;ldquo;Data is the new oil&amp;rdquo;. We now have all the evidence to believe that this is so true. Just like oil, data is not much usable in its crude form. Data is the important input for Machine Learning Algorithms to train its systems. However, most of the times, raw data may not be directly usable for neural networks. Data needs to be cleansed and normalised. Data is the oil of digital era. Just like oil in the last century, giants that deal in data - Google, Facebook, Amazon, Apple and Microsoft are racking up billions and are seemingly unstoppable.&lt;/p&gt;
+&lt;p&gt;Worlds biggest Internet companies&amp;rsquo; (&lt;a href=&#34;https://en.wikipedia.org/wiki/Facebook,_Apple,_Amazon,_Netflix_and_Google&#34;&gt;FAANG&lt;/a&gt;) control of data gives them immense power. Today is the age of data explosion, and the means and facilities to analyse and make use of the wealth of this data is a gold mine for them. Amazon seems to be one step ahead in this game just like their first mover advantage in profiting from Cloud.&lt;/p&gt;
+&lt;h2 id=&#34;aws-data-exchange&#34;&gt;AWS Data Exchange&lt;/h2&gt;
+&lt;p&gt;Amazon Web Service announced the release of &lt;a href=&#34;https://aws.amazon.com/data-exchange/&#34;&gt;AWS Data Exchange&lt;/a&gt; last week. This service does exactly the same thing as the name implies: Acting as an exchange of data products between providers and consumers of data. This service enables consumers to purchase data products available from multiple providers, load the data into S3 storage, and then analyze with various Data analytics and Machine learning services from AWS.&lt;/p&gt;
+&lt;p&gt;Target customers of this new AWS service are companies in Financial Services, Consumer &amp;amp; Retail, Healthcare &amp;amp; Life Sciences domains. Currently, the AWS Data Exchange product catalogue includes data from providers such as Reuters, Foursquare, TransUnion, Change Healthcare, Virtusa etc.&lt;/p&gt;
+&lt;p&gt;It is indeed clear that rich dataset on various topics is a very important raw material for todays conglomerates and behemoths!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embarking on a Journey With Go</title>
+      <link>https://tectalks.com/posts/embarking-on-a-journey-with-go/</link>
+      <pubDate>Thu, 14 Nov 2019 13:48:20 +0100</pubDate>
+      <guid>https://tectalks.com/posts/embarking-on-a-journey-with-go/</guid>
+      <description>&lt;p&gt;Today, I am embarking on a journey to learn Go!&lt;/p&gt;
+&lt;p&gt;Before explaining more about the journey, let me tell you a little bit of background. Recently, I have decided to become more organized in setting learning goals and achieveing them. I have experienced that gentle technology enabled reminders helps a lot to keep focus and avoid distractions. For example, the &lt;a href=&#34;https://www.apple.com/lae/watch/close-your-rings/&#34;&gt;Activity Rings&lt;/a&gt; in Apple Watch. It was an eye-opener that how much it motivates to close those rings and achieve fitness goals every day without fail. I really liked the Activity Rings and searched for similar apps to set personal development goals. At the moment, I am trying out Streaks App, and hope it helps.&lt;/p&gt;
+&lt;p&gt;One of the goals I have set in Streaks is to learn new languages. Two languages in this case to be exact: One human language and one Programming Language. German is the human language and &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; is the Progamming Language I have decided to learn.&lt;/p&gt;
+&lt;p&gt;Today marks the historical first day in my pursuit of learning Go!&lt;/p&gt;
+&lt;h2 id=&#34;why-go&#34;&gt;Why Go?&lt;/h2&gt;
+&lt;p&gt;I have heard a lot of good things about Go. Even this blog takes advantage of Go in its internal workings. This blog is created in a static site generator and deployed to GitHub Pages. The Static Site Generator in this case is Hugo. You have guessed it correct! Hugo is written in Go.&lt;/p&gt;
+&lt;p&gt;Go is a newer language and is very quickly rising in popularity.&lt;/p&gt;
+&lt;p&gt;Go is invented by geniuses in the Computer Science domain and is Open Source.&lt;/p&gt;
+&lt;p&gt;Go is designed to support concurrency and multicore CPU architecture.&lt;/p&gt;
+&lt;p&gt;Go is highly performant and is best suited for systems programming.&lt;/p&gt;
+&lt;p&gt;Above all, it is more human readble and easier to learn.&lt;/p&gt;
+&lt;p&gt;Wish me luck!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Temporary Table Could Not Be Re Created</title>
+      <link>https://tectalks.com/493/temporary-table-could-not-be-re-created/</link>
+      <pubDate>Tue, 29 Oct 2019 08:51:53 +0100</pubDate>
+      <guid>https://tectalks.com/493/temporary-table-could-not-be-re-created/</guid>
+      <description>&lt;h2 id=&#34;temporary-tables-with-the-same-name-could-not-be-re--created-in-a-procedure--a-case-study&#34;&gt;Temporary tables with the same name could not be (re)  created in a procedure – a case study&lt;/h2&gt;
+&lt;p&gt;A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.&lt;/p&gt;
+&lt;p&gt;No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:&lt;/p&gt;
+&lt;p&gt;Some Code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  temptab( n1 int, n2 int)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Do the processing.&lt;/p&gt;
+&lt;p&gt;A Proof of concept is presented. Perfect on demo!&lt;/p&gt;
+&lt;p&gt;Now a similar logic is to be applied for six different sets of data within the same procedure,code snippet for each set of data would be developed by a separate developer.  The team decided to do a copy and paste of the code that is already in place.&lt;/p&gt;
+&lt;p&gt;Hmm !!! Copy and Paste !!  Anyway the table temptab is dropped and re-created each time, should not be a problem. The modified code looks like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For first data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;&#34;&gt;–&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;some&lt;/span&gt; code
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  temptab( n1 int, n2 int);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;some code in between&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For second data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id (&lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;   temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab( n1 int, n2 int) ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So far so good..&lt;/p&gt;
+&lt;p&gt;Now the Villain ( none other than the DBA ) comes into scene, he does not like the idea of dropping and recreating a permanent table from within a procedure. He preaches of N number of reasons against the practice.&lt;/p&gt;
+&lt;p&gt;What to do now ? Obvious choice – use a temporary table instead. It should be simple – code is modified as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For first data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;&#34;&gt;–&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;some&lt;/span&gt; code
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;tempdb..#temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  #temptab( n1 int, n2 int);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;some code in between&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For second data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id (&lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;tempdb..#temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab( n1 int, n2 int) ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Oh No! The procedure is not getting created, It is failing with an error message&lt;/p&gt;
+&lt;p&gt;Msg 2714, Level 16, State 1, Line 10
+There is already an object named ‘#temptab’ in the database.&lt;/p&gt;
+&lt;p&gt;You read it correctly, the message is -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;There is already an object named ‘#temptab’ in the database.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Code is re-examined n number of times, not any issues were found. Logically it should drop the temporary table and re-create it, Right ? But reality is far from that ! Perplexed ?? But it was working perfectly with permanent table ! What is the problem with temporary tables?&lt;/p&gt;
+&lt;p&gt;Let us see what &lt;a href=&#34;https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms174979(v=sql.100)?redirectedfrom=MSDN&#34;&gt;Microsoft&lt;/a&gt; states about it:&lt;/p&gt;
+&lt;p&gt;“If more than one temporary table is created inside a single stored procedure or batch, they must have different names.”&lt;/p&gt;
+&lt;p&gt;Does it mean that we cannot re-create a temporary table from within a procedure with the same name ?  Let us check one more link –&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blogs.msdn.microsoft.com/sqlserverfaq/2012/03/15/an-interesting-find-about-temp-tables-in-sql-server/&#34;&gt;SQL Server Tips &amp;amp; Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Crystal clear – This is a ‘feature’ by design.&lt;/p&gt;
+&lt;p&gt;If you come across a similar issue don’t waste your valuable time to resolve. Instead look for workarounds.&lt;/p&gt;
+&lt;p&gt;Thank you for visiting this post. Highly appreciate your feedback and comments.
+Happy reading.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;About the Author&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anoo S Pillai&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Senior SQL Server DBA&lt;/p&gt;
+&lt;p&gt;Specializing in high availibility, disaster recovery and performance tuning&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://tectalks.com/about/</link>
+      <pubDate>Sun, 15 Sep 2019 23:29:23 +0200</pubDate>
+      <guid>https://tectalks.com/about/</guid>
+      <description>&lt;p&gt;Thank you for visiting Techtalks. My name is Vibin Andrews Kurusingal.
+I am an IT Professional and a Hobby Photographer based in Germany.
+I specialize on Site Reliability Engineering, Multi Cloud Deployments and DevOps practises.
+Since March 2022, I have been selected as an
+&lt;strong&gt;&lt;a href=&#34;https://aws.amazon.com/developer/community/community-builders/&#34;&gt;AWS Community Builder&lt;/a&gt;&lt;/strong&gt; in the Serverless category.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogging With Hugo</title>
+      <link>https://tectalks.com/posts/blogging-with-hugo/</link>
+      <pubDate>Mon, 09 Sep 2019 16:41:04 +0200</pubDate>
+      <guid>https://tectalks.com/posts/blogging-with-hugo/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since this blog was updated. Today, I&amp;rsquo;ve decided to bring a new life to my blog with a new backend and a new theme. In the beginning, I had been using Wordpress for blogging but felt like it was overkill for such a simple blog. I was searching for a simpler approach for publishing my blog and thats when I stumbled upon Jekyll. So I decided to try it out. However the experience was not ideal for me.&lt;/p&gt;
+&lt;p&gt;Then I learned about &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and decided to give it a try. My experience with Hugo has been very positive. In comparison to Jekyll and Wordpress, setting up Hugo was a breeze. I was able to install Hugo, set it up and deploy the site to &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; on my custom domain - all under 30 minutes!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

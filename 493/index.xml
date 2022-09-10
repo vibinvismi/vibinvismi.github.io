@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>493s on </title>
+    <link>https://tectalks.com/493/</link>
+    <description>Recent content in 493s on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Oct 2019 08:51:53 +0100</lastBuildDate>
+    <atom:link href="https://tectalks.com/493/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Temporary Table Could Not Be Re Created</title>
+      <link>https://tectalks.com/493/temporary-table-could-not-be-re-created/</link>
+      <pubDate>Tue, 29 Oct 2019 08:51:53 +0100</pubDate>
+      <guid>https://tectalks.com/493/temporary-table-could-not-be-re-created/</guid>
+      <description>&lt;h2 id=&#34;temporary-tables-with-the-same-name-could-not-be-re--created-in-a-procedure--a-case-study&#34;&gt;Temporary tables with the same name could not be (re)  created in a procedure – a case study&lt;/h2&gt;
+&lt;p&gt;A complex SQL server procedure is under development. The Developer wants to reduce the complexity, he noted that if intermediate results are populated to a staging table, the logic would be much simpler.&lt;/p&gt;
+&lt;p&gt;No worries!! He created an intermediate table on the fly. Everything work perfect. The modified code looks like the following:&lt;/p&gt;
+&lt;p&gt;Some Code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  temptab( n1 int, n2 int)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Do the processing.&lt;/p&gt;
+&lt;p&gt;A Proof of concept is presented. Perfect on demo!&lt;/p&gt;
+&lt;p&gt;Now a similar logic is to be applied for six different sets of data within the same procedure,code snippet for each set of data would be developed by a separate developer.  The team decided to do a copy and paste of the code that is already in place.&lt;/p&gt;
+&lt;p&gt;Hmm !!! Copy and Paste !!  Anyway the table temptab is dropped and re-created each time, should not be a problem. The modified code looks like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For first data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;&#34;&gt;–&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;some&lt;/span&gt; code
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  temptab( n1 int, n2 int);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;some code in between&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For second data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id (&lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;   temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; temptab( n1 int, n2 int) ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So far so good..&lt;/p&gt;
+&lt;p&gt;Now the Villain ( none other than the DBA ) comes into scene, he does not like the idea of dropping and recreating a permanent table from within a procedure. He preaches of N number of reasons against the practice.&lt;/p&gt;
+&lt;p&gt;What to do now ? Obvious choice – use a temporary table instead. It should be simple – code is modified as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For first data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;&#34;&gt;–&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;some&lt;/span&gt; code
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id  ( &lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;tempdb..#temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt;  #temptab( n1 int, n2 int);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;some code in between&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;/* For second data set */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; object_id (&lt;span style=&#34;&#34;&gt;‘&lt;/span&gt;tempdb..#temptab&lt;span style=&#34;&#34;&gt;’&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;null&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;begin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;drop&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;table&lt;/span&gt; #temptab( n1 int, n2 int) ;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Oh No! The procedure is not getting created, It is failing with an error message&lt;/p&gt;
+&lt;p&gt;Msg 2714, Level 16, State 1, Line 10
+There is already an object named ‘#temptab’ in the database.&lt;/p&gt;
+&lt;p&gt;You read it correctly, the message is -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;There is already an object named ‘#temptab’ in the database.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Code is re-examined n number of times, not any issues were found. Logically it should drop the temporary table and re-create it, Right ? But reality is far from that ! Perplexed ?? But it was working perfectly with permanent table ! What is the problem with temporary tables?&lt;/p&gt;
+&lt;p&gt;Let us see what &lt;a href=&#34;https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms174979(v=sql.100)?redirectedfrom=MSDN&#34;&gt;Microsoft&lt;/a&gt; states about it:&lt;/p&gt;
+&lt;p&gt;“If more than one temporary table is created inside a single stored procedure or batch, they must have different names.”&lt;/p&gt;
+&lt;p&gt;Does it mean that we cannot re-create a temporary table from within a procedure with the same name ?  Let us check one more link –&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blogs.msdn.microsoft.com/sqlserverfaq/2012/03/15/an-interesting-find-about-temp-tables-in-sql-server/&#34;&gt;SQL Server Tips &amp;amp; Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Crystal clear – This is a ‘feature’ by design.&lt;/p&gt;
+&lt;p&gt;If you come across a similar issue don’t waste your valuable time to resolve. Instead look for workarounds.&lt;/p&gt;
+&lt;p&gt;Thank you for visiting this post. Highly appreciate your feedback and comments.
+Happy reading.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;About the Author&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anoo S Pillai&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Senior SQL Server DBA&lt;/p&gt;
+&lt;p&gt;Specializing in high availibility, disaster recovery and performance tuning&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
