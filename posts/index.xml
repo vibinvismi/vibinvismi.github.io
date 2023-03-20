@@ -6,8 +6,68 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Dec 2019 16:31:17 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 20 Mar 2023 13:03:17 +0100</lastBuildDate>
     <atom:link href="https://tectalks.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AWS Lambda: The Serverless Compute Service</title>
+      <link>https://tectalks.com/posts/aws-lambda-serverless-compute-service/</link>
+      <pubDate>Mon, 20 Mar 2023 13:03:17 +0100</pubDate>
+      <guid>https://tectalks.com/posts/aws-lambda-serverless-compute-service/</guid>
+      <description>&lt;p&gt;In the world of cloud computing, the concept of &lt;a href=&#34;https://tectalks.com/posts/serverless-future-of-cloud-computing/&#34;&gt;serverless&lt;/a&gt; computing has gained a lot of attention in recent years. Serverless computing allows developers to focus on writing code instead of managing infrastructure. One of the most popular serverless compute services is AWS Lambda, which is offered by Amazon Web Services.&lt;/p&gt;
+&lt;p&gt;AWS Lambda is a compute service that lets you run code without provisioning or managing servers. With Lambda, you simply upload your code and AWS takes care of everything else, including scaling, availability, and security. Lambda works by executing code in response to certain events, such as an HTTP request, a database change, or a file upload.&lt;/p&gt;
+&lt;p&gt;One of the key benefits of AWS Lambda is that you only pay for the compute time that your code actually uses. This means that you can run your code without having to worry about the underlying infrastructure or the cost of idle resources. AWS Lambda also provides automatic scaling, so your code can handle large spikes in traffic without any additional effort on your part.&lt;/p&gt;
+&lt;p&gt;AWS Lambda supports a wide range of programming languages, including Python, Node.js, Java, C#, and Go, among others. This allows you to choose the programming language that you are most comfortable with, and that best suits your application&amp;rsquo;s requirements.&lt;/p&gt;
+&lt;p&gt;To get started with AWS Lambda, you first need to create a Lambda function. A Lambda function is a piece of code that runs in response to an event. You can create a Lambda function using the AWS Management Console, AWS CLI, or AWS SDKs. Once you have created a Lambda function, you can configure it to trigger in response to various events, such as API Gateway requests, S3 bucket uploads, or AWS CloudFormation stack updates.&lt;/p&gt;
+&lt;p&gt;AWS Lambda is often used for building serverless applications, which are applications that rely on third-party services to manage the backend infrastructure. Serverless applications can be highly scalable, cost-effective, and easy to maintain, since you don&amp;rsquo;t have to worry about managing the underlying infrastructure yourself.&lt;/p&gt;
+&lt;h3 id=&#34;latest-features-of-aws-lambda&#34;&gt;Latest Features of AWS Lambda&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Lambda SnapStart: Lambda &lt;a href=&#34;https://aws.amazon.com/blogs/aws/new-accelerate-your-lambda-functions-with-lambda-snapstart/&#34;&gt;SnapStart&lt;/a&gt; accelerates application performance by utilizing a single pre-initialized snapshot to resume multiple execution environments.&lt;/li&gt;
+&lt;li&gt;Lambda Function URLs: Enables you to add &lt;a href=&#34;https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-https-endpoints-for-single-function-microservices/&#34;&gt;HTTPS endpoints&lt;/a&gt; to any Lambda function. Additionally, it allows optional configuration of Cross-Origin Resource Sharing (CORS) headers.&lt;/li&gt;
+&lt;li&gt;Provisioned Concurrency: Allows you to ensure that a certain number of functions are running and available to respond to requests at all times. This helps to reduce cold starts and improve the overall performance of your Lambda functions.&lt;/li&gt;
+&lt;li&gt;Custom Runtimes: Allows you to use any programming language or runtime that can run on Linux. This means you can use languages like Rust, Swift, or even COBOL to write your Lambda functions.&lt;/li&gt;
+&lt;li&gt;Container Image Support: Allows you to use your own custom runtime, operating system, and dependencies. This makes it easier to migrate existing applications to Lambda and enables greater customization and control over the runtime environment.&lt;/li&gt;
+&lt;li&gt;Extensions: AWS Lambda Extensions are a new way to easily integrate Lambda with third-party tools and services. Extensions can be used to instrument and monitor Lambda functions, add security and compliance controls, or integrate with logging and debugging tools.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Overall, AWS Lambda is a powerful tool for building scalable, event-driven applications that can be run without worrying about infrastructure management. With its pay-per-use pricing model, automatic scaling, and support for multiple programming languages, AWS Lambda is an ideal choice for developers looking to build serverless applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Serverless: The Future of Cloud Computing</title>
+      <link>https://tectalks.com/posts/serverless-future-of-cloud-computing/</link>
+      <pubDate>Mon, 20 Mar 2023 12:57:02 +0100</pubDate>
+      <guid>https://tectalks.com/posts/serverless-future-of-cloud-computing/</guid>
+      <description>&lt;p&gt;The concept of serverless computing has revolutionized the way developers build and deploy applications in the cloud. Serverless computing, also known as Function as a Service (FaaS), allows developers to focus on writing code without worrying about managing servers or infrastructure. In this blog post, we&amp;rsquo;ll explore what serverless computing is, how it works, its benefits and some of the Serverless services offered by AWS, the most popular Cloud provider.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-serverless-computing&#34;&gt;What is Serverless Computing?&lt;/h3&gt;
+&lt;p&gt;Serverless computing is a cloud computing model where the cloud provider manages the infrastructure, allowing developers to focus on writing code. With serverless computing, the cloud provider automatically provisions and manages the infrastructure required to run and scale your application. This means that you don&amp;rsquo;t have to worry about server management, capacity planning, or infrastructure scaling.&lt;/p&gt;
+&lt;h3 id=&#34;how-does-serverless-computing-work&#34;&gt;How Does Serverless Computing Work?&lt;/h3&gt;
+&lt;p&gt;Serverless computing works by executing code in response to events. An event can be anything that triggers your code to run, such as an HTTP request, a database change, or a file upload. When an event occurs, the cloud provider runs your code in a container and then destroys the container once the code has finished executing. This means that you only pay for the time that your code runs, making serverless computing a cost-effective solution.&lt;/p&gt;
+&lt;h3 id=&#34;benefits-of-serverless-computing&#34;&gt;Benefits of Serverless Computing&lt;/h3&gt;
+&lt;p&gt;One of the biggest benefits of serverless computing is scalability. With serverless computing, your application can scale automatically in response to changes in traffic or workload. This means that you don&amp;rsquo;t have to worry about managing the underlying infrastructure or scaling your servers manually.&lt;/p&gt;
+&lt;p&gt;Another benefit of serverless computing is cost savings. With serverless computing, you only pay for the compute time that your code actually uses. This means that you don&amp;rsquo;t have to pay for idle resources or overprovision your infrastructure to handle spikes in traffic.&lt;/p&gt;
+&lt;p&gt;Serverless computing also provides faster time to market for your applications. With serverless computing, you can focus on writing code instead of managing infrastructure, which allows you to release new features and updates more quickly.&lt;/p&gt;
+&lt;h3 id=&#34;aws-serverless&#34;&gt;AWS Serverless&lt;/h3&gt;
+&lt;p&gt;AWS offers a range of serverless services, including:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/lambda/&#34;&gt;AWS Lambda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/fargate/&#34;&gt;AWS Fargate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/eventbridge/&#34;&gt;Amazon EventBridge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/step-functions/&#34;&gt;AWS Step Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/sqs/&#34;&gt;Amazon SQS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/sns/&#34;&gt;Amazon SNS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/api-gateway/&#34;&gt;Amazon API Gateway&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/appsync/&#34;&gt;AWS AppSync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/s3/&#34;&gt;Amazon S3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/efs/&#34;&gt;Amazon EFS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/dynamodb/&#34;&gt;Amazon DynamoDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/rds/proxy/&#34;&gt;Amazon RDS Proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/rds/aurora/serverless/&#34;&gt;Amazon Aurora Serverless&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/redshift/redshift-serverless/&#34;&gt;Amazon Redshift Serverless&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/neptune/serverless/&#34;&gt;Amazon Neptune Serverless&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Reflecting on 10 Years of DevOps</title>
