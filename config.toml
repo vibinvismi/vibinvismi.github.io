@@ -13,6 +13,7 @@ pygmentscodefences  = true
 
 [params]
   sitename = "Techtalks"
+  logoWidth = 200
   disableWebFonts = false
   poweredby = false
   submitted= true
