@@ -1,0 +1,30 @@
+baseurl = "https://tectalks.com/"
+#title = "Tectalks"
+author = "Vibin Kurusingal"
+canonifyurls = true
+languagecode = "en"
+theme = "zen"
+# googleAnalytics = "UA-147956139-1"
+gtm_id = "GTM-PPC3LG2"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "Techtalks"
+  disableWebFonts = false
+  copyright= "&copy; 2026 Tectalks"
+  poweredby= true
+  submitted= true
+  feedlinks= true
+  cookieConsent= true
+  favicon= "apple-touch-icon.png"
+#  sidebar= true
+
+[[menu.main]]
+    name = "About"
+    url  = "/about"
+
+[[menu.main]]
+    name = "Instagram"
+    url  = "https://instagram.com/vibin.aero"
