@@ -1,9 +1,10 @@
 baseurl = "https://tectalks.com/"
-#title = "Tectalks"
+title = "Tectalks"
 author = "Vibin Kurusingal"
 canonifyurls = true
 languagecode = "en"
 theme = "zen"
+copyright = "© 2026 Tectalks"
 # googleAnalytics = "UA-147956139-1"
 gtm_id = "GTM-PPC3LG2"
 
@@ -13,8 +14,7 @@ pygmentscodefences  = true
 [params]
   sitename = "Techtalks"
   disableWebFonts = false
-  copyright= "&copy; 2026 Tectalks"
-  poweredby= true
+  poweredby = false
   submitted= true
   feedlinks= true
   cookieConsent= true
