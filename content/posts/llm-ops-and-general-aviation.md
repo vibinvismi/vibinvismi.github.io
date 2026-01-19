@@ -3,9 +3,12 @@ title: "The Hands-On-the-Yoke Era of AI: From General Aviation to LLM Ops"
 date: 2026-01-19
 tags: ["AI", "LLM Ops", "Aviation", "SRE", "DevOps"]
 author: "Vibin"
+image: "/images/hands-on-yoke.png"
 ---
 
-I’ve spent most of my flying time in General Aviation (GA), where the connection between the pilot and the machine is direct. In a small plane, you feel the thermals through the yoke, you hear the engine’s rhythm change with the mixture, and you are constantly adjusting for the environment. 
+I've spent most of my flying time in General Aviation (GA), where the connection between the pilot and the machine is direct. In a small plane, you feel the thermals through the yoke, you hear the engine's rhythm change with the mixture, and you are constantly adjusting for the environment.
+
+![Hands on the yoke](/images/hands-on-yoke.png)
 
 It is a stark contrast to the world of heavy commercial jets. In those cockpits, it’s often said the autopilot handles the flight surfaces for 99% of the journey. In that environment, the pilot has evolved into a Systems Manager—monitoring the automation rather than hand-flying the aircraft.
 
