@@ -5,8 +5,7 @@ canonifyurls = true
 languagecode = "en"
 theme = "zen"
 copyright = "© 2026 Tectalks"
-# googleAnalytics = "UA-147956139-1"
-gtm_id = "GTM-PPC3LG2"
+googleAnalytics = "G-LZKDZ0ND0S"
 
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
