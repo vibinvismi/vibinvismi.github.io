@@ -1,6 +1,7 @@
 ---
 title: "Delhi to Vienna, the Long Way Round"
 date: 2026-03-09T12:00:00+01:00
+author: "Vibin"
 draft: false
 ---
 
