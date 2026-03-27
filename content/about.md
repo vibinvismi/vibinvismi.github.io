@@ -1,11 +1,10 @@
 ---
 title: "About"
-date: 2019-09-15T23:29:23+02:00
 ---
 
 Thank you for visiting **Techtalks**.
 
-My name is **Vibin Andrews Kurusingal**. I am an IT Professional and a Hobby Photographer based in Germany.
+My name is **Vibin Andrews Kurusingal**. I am an IT Professional, Private Pilot and a Hobby Photographer based in Germany.
 
 Currently, my professional focus is at the forefront of **LLM Ops**. I bridge the gap between traditional Site Reliability Engineering (SRE) and the unique demands of Large Language Models. I specialize in the operationalization of **Generative AI (GenAI)**—building the robust infrastructure, deployment pipelines, and observability frameworks necessary to move AI from experimental demos to stable, scalable production environments. My goal is to apply the principles of high availability and automation to the evolving world of intelligent systems.
 
