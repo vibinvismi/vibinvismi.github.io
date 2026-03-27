@@ -9,3 +9,6 @@ hugo_stats.json
 
 # IDE
 .idea/
+
+# Claude Code
+.claude/
