@@ -22,8 +22,4 @@ performs on different platforms.
 It authorises against one Google Account, mine. There are no user accounts, no way for
 anyone else to connect a channel to it, and it is not offered as a service.
 
-### Contact
-
-Questions about this application: [vibin.kurusingal@gmail.com](mailto:vibin.kurusingal@gmail.com)
-
 [Privacy policy](/viewfinder-privacy/)

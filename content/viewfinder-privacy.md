@@ -66,4 +66,5 @@ invalidates the stored token.
 
 ### Contact
 
-[vibin.kurusingal@gmail.com](mailto:vibin.kurusingal@gmail.com)
+Questions about this application go to the support email shown on the Google consent
+screen when authorising it.
